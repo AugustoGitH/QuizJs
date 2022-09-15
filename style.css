@@ -1,0 +1,132 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Bebas Neue', cursive;
+    list-style: none;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: #FEDB39;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 3rem;
+    letter-spacing: 3px;
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding: 1rem;
+}
+
+.quiz__progress{
+    display: flex;
+    flex-wrap: wrap;
+    color: white;
+    margin-bottom: 3rem;
+    width: 100%;
+    justify-content: center;
+
+}
+.block--alternativa{
+    margin: 1rem;
+    background-color: black;
+    font-size: 3rem;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    cursor: default;
+}
+.quiz__perguntas{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+.quiz__perguntas p{
+    font-size: 2.7rem;
+}
+.quiz{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.quiz__alternatives{
+    width: 100%;
+}
+.quiz__alternatives li{
+    font-size: 2.4rem;
+    border: 1px solid black;
+    margin-bottom: 5px;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.quiz__alternatives li:hover{
+    background-color: black;
+    color: white;
+}
+.correct{
+    background-color: rgb(23, 53, 201);
+}.errado{
+    background-color: rgb(172, 19, 19);
+}
+.p_result{
+    background-color: black;
+    color: white;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: default;
+    font-size: 2.6rem;
+    box-shadow: 4px 4px rgba(36, 34, 34, 0.507);
+
+}
+.tela__result{
+    display: flex;
+    align-items: center;
+
+}
+.btn_result{
+    margin-left: 1rem;
+    padding: 9px;
+    font-size: 2rem;
+    letter-spacing: 2px;
+    background-color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    box-shadow: 3px 3px rgb(167, 162, 162);
+    transition: 0.3s;
+}.btn_result:hover{
+    box-shadow: none;
+    transform: translate(3px, 3px);
+}
+@media (max-width: 930px){
+    .block--alternativa{
+        margin: 4px;
+        
+    }
+} 
+@media (max-width: 600px){
+    .quiz__perguntas p{
+        font-size: 2.5rem;
+        line-height: 2.3rem;
+    }.quiz__alternatives li{
+        font-size: 2.5rem;
+    }.quiz__alternatives{
+        margin-top: 1rem;
+    }
+} 
