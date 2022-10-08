@@ -19,6 +19,7 @@ h1{
 }
 
 .container{
+    transform: scale(0.7);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -117,7 +118,6 @@ h1{
 @media (max-width: 930px){
     .block--alternativa{
         margin: 4px;
-        
     }
 } 
 @media (max-width: 600px){
@@ -128,5 +128,16 @@ h1{
         font-size: 2.5rem;
     }.quiz__alternatives{
         margin-top: 1rem;
+    }
+    h1{
+        font-size: 2.6rem;
+    }.quiz__perguntas p{
+        font-size: 2.2rem;
+    }.block--alternativa{
+        font-size: 2.1rem;
+    }.container{
+        transform: scale(0.8);
+    }.quiz__alternatives li{
+        font-size: 2.1rem;
     }
 } 

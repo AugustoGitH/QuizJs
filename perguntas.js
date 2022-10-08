@@ -78,7 +78,7 @@ const perguntas = [
     },
     {
         id: 9,
-        question: "Como que todo código de HTML começa?",
+        question: "Qual é o maior titulo?",
         alternativas: [
             { al: 1, alternativa: "< h1>" },
             { al: 2, alternativa: "< h5 >" },
